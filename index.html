@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <?php
+
+    // Основы PHP
+
+    // 1.Привет мир!
+    print_r('Hello, World!');
+    
+    // 2.Теги
+    print_r('King in the North!');
+    
+    // 3.Комментарии
+    //  You know nothing, Jon Snow
+    
+    // 4.Инструкции (Statements)
+    print_r('Robert');
+    print_r('Stannis');
+    print_r('Renly');
+    
+    // 5.Как мы проверяем ваши решения
+    print_r('9780262531962');
+    
+    // 6.Синтаксические ошибки
+    print_r('What Is Dead May Never Die');
+    
+    // Арифметика
+    
+    // 7.Арифметические операции
+    // BEGIN (write your solution here)
+    print_r(81 / 9);
+    // END
+
+    //8.Операторы
+    // BEGIN (write your solution here)
+    print_r(6 - -81);
+    // END
+
+    // 9.Коммутативная операция
+    // BEGIN (write your solution here)
+    print_r(3 ** 5);
+    print_r(-8 / -4);
+    // END
+
+    // 10.Композиция операций
+    // BEGIN (write your solution here)
+    print_r(8 / 2 + 5 - -3 / 2);
+    // END
+    
+    // 11.Приоритет операций
+    // BEGIN (write your solution here)
+    print_r(70 * (3 + 4) / (8 + 2));
+    // END
+    
+    //12.Линтер
+    // BEGIN (write your solution here)
+    print_r((5 ** 2) - (3 * 7));
+    // END
+    
+    // Строки
+    
+    // 13.Кавычки
+    // BEGIN (write your solution here)
+    print_r("\"Khal Drogo's favorite word is \"athjahakar\"\"");
+    // END
+    
+    // 14.Экранирующие последовательности
+    // BEGIN (write your solution here)
+    print_r("- Did Joffrey agree?\n- He did. He also said \"I love using \\n\".");
+    // END
+    
+    // 15.Конкатенация
+    // BEGIN (write your solution here)
+    print_r('Winter ' . 'came ' . 'for ' . 'the ' . 'House ' . 'of ' . 'Frey' . '.');
+    // END
+    
+    // 16.Кодировка
+    // BEGIN (write your solution here)
+    print_r(chr(126));
+    print_r(chr(94));
+    print_r(chr(37));
+    // END
+    
+    // Типы данных PHP
+    
+    // 17.Типы данных
+    // BEGIN (write your solution here)
+    print_r(-0.304);
+    // END
+    
+    // 18.Слабая типизация
+    // BEGIN (write your solution here)
+    print_r('7' - (-8 - -2));
+    // END
+    
+    // 19.Явное преобразование типов
+    // BEGIN (write your solution here)
+    print_r(((int) 2.9) . ' times');
+    // END
+    
+    // Переменные в языке PHP
+
+    // 20.Что такое переменная
+    // BEGIN (write your solution here)
+    $motto = 'What Is Dead May Never Die!';
+    print_r($motto);
+    // END
+    
+    // 21.Изменение переменной
+    $name = 'Brienna';
+    
+    // BEGIN (write your solution here)
+    $name = 'anneirB';
+    // END
+    
+    print_r($name);
+    
+    // 22.Выбор имени переменной
+    // BEGIN (write your solution here)
+    $numberMyBrothers = 2;
+    print_r($numberMyBrothers);
+    // END
+    
+    // 23.Ошибки при работе с переменными
+    $family = 'Targaryen';
+    
+    // BEGIN (write your solution here)
+    $pet = 'Dragon';
+    // END
+    
+    print_r($family);
+    print_r(' and ');
+    print_r($pet);
+    
+    // 24.Выражения в определениях
+    $eurosCount = 100;
+    
+    // BEGIN (write your solution here)
+    $rublesPerDollar = 60;
+    $dollarsCount = $eurosCount * 1.25;
+    $rublesCount = $dollarsCount * $rublesPerDollar;
+    
+    print_r($dollarsCount);
+    print_r("\n");
+    print_r($rublesCount);
+    // END
+
+    // 25.Переменные и конкатенаци
+    $info = "We couldn't verify you mother's maiden name.";
+    $intro = "\nHere is important information about your account security.";
+    
+    $firstName = 'Joffrey';
+    $greeting = 'Hello';
+    
+    // BEGIN (write your solution here)
+    print_r($greeting . ', ' . $firstName . '!' . $intro);
+    print_r("\n");
+    print_r($info);
+    // END
+
+    // 26.Именование переменных
+    // BEGIN (write your solution here)
+    $firstNumber = 1.10;
+    $secondNumber = -100;
+    
+    print_r($firstNumber * $secondNumber);
+    // END
+
+    // 27.Магические числа
+    $king = 'King Balon the 6th';
+    
+    // BEGIN (write your solution here)
+    $newKing = 6;
+    $castleIsInherited = 17;
+    
+    print_r($king . ' has ' . ($newKing * $castleIsInherited) . ' rooms.');
+    // END
+
+    // 28.Константы
+    // BEGIN (write your solution here)
+    const DRAGONS_BORN_COUNT = 3;
+    print_r(DRAGONS_BORN_COUNT);
+    // END
+
+    // 29.Магические константы
+    // BEGIN (write your solution here)
+    print_r(__DIR__);
+    // END
+
+    // 30.Интерполяция
+    $stark = 'Arya';
+    
+    // BEGIN (write your solution here)
+    print_r("Do you want to eat, {$stark}?");
+    // END
+
+    // 31.Извлечение символов из строки 
+    $one = 'Naharis';
+    $two = 'Mormont';
+    $three = 'Sand';
+    
+    // BEGIN (write your solution here)
+    print_r($one[2]);
+    print_r($two[1]);
+    print_r($three[3]);
+    print_r($two[4]);
+    print_r($two[2]);
+    // END
+
+    // 32.Heredoc 
+    // BEGIN (write your solution here)
+    $str = <<<EOT
+    Lannister, Targaryen, Baratheon, Stark, Tyrell... they're all just spokes on a wheel.
+    This one's on top, then that one's on top, and on and on it spins, crushing those on the ground.
+    EOT;
+    // END
+    
+    print_r($str);
+    
+    // Вызов функций
+
+    // 33.Функции и их вызов
+    $company1 = 'Apple';
+    $company2 = 'Samsung';
+    
+    // BEGIN (write your solution here)
+    $result = strlen("{$company1}{$company2}");
+    print_r($result);
+    // END
+
+    // 34.Сигнатура функции
+    $text = 'mount';
+    
+    // BEGIN (write your solution here)
+    $result = ucfirst($text);
+    print_r($result);
+    // END
+
+    // 35.Аргументы по умолчанию
+    $number = 10.1234;
+    
+    // BEGIN (write your solution here)
+    $result = round($number , 2);
+    print_r($result);
+    // END
+
+    // 36.Вызов функции — выражение
+    $text = 'Never forget what you are, for surely the world will not';
+    
+    // BEGIN (write your solution here)
+    $result = "First: {$text[0]}\nLast: {$text[strlen($text) - 1]}";
+    print_r($result);
+    // END
+
+    // 37.Функции с переменным числом параметров
+    // BEGIN (write your solution here)
+    $result = min(3, 10, 22, -3, 0);
+    print_r($result);
+    // END
+
+    // 38.Детерминированность
+    // BEGIN (write your solution here)
+    $result = rand(1, 6);
+    print_r($result);
+    // END
+
+    // 39.Стандартная библиотека
+    $motto = 'Family, Duty, Honor';
+    
+    // BEGIN (write your solution here)
+    $result = gettype($motto);
+    print_r($result);
+    // END
+    
+    // Определение функций
+
+    // 40.Создание (определение) функций
+    // Неймспейсы изучаются на Хекслете
+    // Здесь они нужны по техническим причинам
+    // Просто не обращайте внимания, они не влияют на разработку
+    namespace HexletBasics\DefineFunctions\Define;
+    
+    // BEGIN (write your solution here)
+    function printMotto() 
+    {
+        $text = 'Winter is coming';
+        print_r($text);
+    };
+    // END
+
+    // 41.Возврат значений
+    namespace HexletBasics\DefineFunctions\ReturnInstruction;
+    
+    // BEGIN (write your solution here)
+    function sayHurrayThreeTimes() {
+        $text = 'hurray! hurray! hurray!';
+        return $text;
+    };
+    // END$hurray = sayHurrayThreeTimes();
+
+    // 42.Параметры функций
+    namespace HexletBasics\DefineFunctions\Parameters;
+    
+    // BEGIN (write your solution here)
+    function truncate($text, $length) 
+    {
+        $croppedString = substr($text, 0, $length);
+        return "$croppedString...";
+    };
+    // END
+
+    // 43.Необязательные параметры функций
+    namespace HexletBasics\DefineFunctions\DefaultArguments;
+    
+    // BEGIN (write your solution here)
+    function getHiddenCard($cartNumber = '1234567812345678', $hiddenVersion = 4)
+    {
+        $hiddenNumbers = substr($cartNumber, 12);
+        return str_repeat('*', $hiddenVersion) . $hiddenNumbers;
+    };
+    // END
+
+    // 44.Чтение документации 
+    namespace HexletBasics\DefineFunctions\ReadingDocumentation;
+    
+    // BEGIN (write your solution here)
+    function getAge($age = '10,5')
+    {
+        return floor($age);
+    };
+    // END
+    
+    // Логика
+
+    // 45.Логический тип
+    namespace HexletBasics\Logic\BoolType;
+    
+    // BEGIN (write your solution here)
+    function isPensioner($age = 60)
+    {
+        return $age >= 60;
+    };
+    isPensioner(75);
+    // END
+
+    // 46.Предикаты
+    namespace HexletBasics\Logic\Predicates;
+    
+    // BEGIN (write your solution here)
+    function isMister($text)
+    {
+        return $text === 'Mister';
+    };
+    isMister('Mister');
+    // END
+
+    // 47.Комбинирование операций и функций
+    namespace HexletBasics\Logic\CombineExpressions;
+    
+    // BEGIN (write your solution here)
+    function isInternationalPhone($number = '+79602223423') 
+    {
+        $firstCharacter = $number[0];
+        $internationalNumber = $firstCharacter === '+';
+        return $internationalNumber;
+    };
+    isInternationalPhone('89602223423');
+    // END
+
+    // 48.Логические операторы
+    namespace HexletBasics\Logic\LogicalOperators;
+    
+    // BEGIN (write your solution here)
+    function isLeapYear($year = 12) 
+    {
+        return $year % 400 === 0 || ($year % 4 === 0 && $year % 100 !== 0);
+    };
+    isLeapYear(2018); // false
+    // END
+
+    // 49.Отрицание
+    namespace HexletBasics\Logic\LogicalNegation;
+    
+    use function HexletBasics\Functions\mb_strrev;
+    
+    // BEGIN (write your solution here)
+    function isPalindrome($palindrome = 'Wow')
+    {
+        $text = strtolower($palindrome);
+        return $text === strrev($text);
+    };
+    isPalindrome('wow');
+    function isNotPalindrome($palindrome)
+    {
+        return !isPalindrome($palindrome);
+    };
+    isNotPalindrome('wow'); 
+    // END
+
+    // 50.Логические операторы 2
+    namespace HexletBasics\Logic\LogicalOperators2;
+    
+    // BEGIN (write your solution here)
+    function isNeutralSoldier($armorColor = 'yellow', $shieldColor = 'red')
+    {
+        return ($armorColor !== 'red' && $shieldColor === 'black');
+    };
+    isNeutralSoldier('yellow', 'black');
+    // END
+
+    // 51.Слабая типизация - 2
+    namespace HexletBasics\Logic\WeakTyping;
+    
+    // BEGIN (write your solution here)
+    function isFalsy($meaning = 'help') 
+    {
+        return $meaning == false;
+    };
+    isFalsy('help');
+    // END
+    
+    // Условные конструкции
+
+    // 52.Условная конструкция (if)
+    namespace HexletBasics\Conditionals\IfStatement;
+    
+    // BEGIN (write your solution here)
+    function guessNumber($specifiedNumber = 42) 
+    {
+        if ($specifiedNumber === 42) {
+            return 'You win!';
+        }
+    
+        return 'Try again!';
+    
+    };
+    
+    // END
+    
+    // 53.else
+    namespace HexletBasics\Conditionals\IfElse;
+    
+    // BEGIN (write your solution here)
+    function normalizeUrl($dataNormalization) 
+    {
+        $address = 'http://';
+        if (strpos($dataNormalization, $address) === 0) {
+            $domain = substr($dataNormalization, 7);
+        } else {
+            $domain = $dataNormalization;
+        }
+    
+        return "https://{$domain}";
+    };
+    
+    normalizeUrl('google.com');
+    // END
+
+    // 54.Конструкция else if
+    namespace HexletBasics\Conditionals\ElseIfStatement;
+    
+    // BEGIN (write your solution here)
+    function whoIsThisHouseToStarks($familyName) 
+    {
+        if ($familyName === 'Karstark'|| $familyName === 'Tully') {
+            $whoAreThey = 'friend';
+        } elseif ($familyName === 'Lannister'|| $familyName === 'Frey') {
+            $whoAreThey = 'enemy';
+        } else {
+            $whoAreThey = 'neutral';
+        }
+    
+        return $whoAreThey;
+    };
+    // END
+
+    // 55.Тернарный оператор
+    namespace HexletBasics\Logic\TernaryOperator;
+    
+    // BEGIN (write your solution here)
+    function flipFlop($text)
+    {
+        return $text === 'flip' ? 'flop' : 'flip';
+    };
+    // END
+
+    // 56.Конструкция Switch
+    namespace HexletBasics\Conditionals\SwitchStatement;
+    
+    // BEGIN (write your solution here)
+    function getNumberExplanation($explain) 
+    {
+        switch ($explain) {
+            case 666:
+                return 'devil number';
+            case 42:
+                return 'answer for everything';
+            case 7:
+                return 'prime number';
+            default:
+                return null;
+        }
+    };
+    // END
+
+    // 57.Оператор Элвис 
+    namespace HexletBasics\Conditionals\Elvis;
+    
+    // BEGIN (write your solution here)
+    function generateAmount($numberProducts, $auditCost)
+    {
+        $amount = $numberProducts ?: $auditCost * 3;
+        return $amount;
+    };
+    generateAmount(0, 2);
+    // END
+    
+    //Циклы
+
+    // 58.Цикл While
+    namespace HexletBasics\Loops\WhileLoop;
+    
+    function printNumbers($firstNumber)
+    {
+        // BEGIN (write your solution here)
+        $i = $firstNumber;
+        while ($i >= 1) {
+            print_r($i);
+            print_r("\n");
+            $i = $i - 1;
+        }
+        print_r('finished!');
+        // END
+    };
+
+    // 59.Агрегация данных (Числа)
+    namespace HexletBasics\Loops\AgregationNumber;
+    
+    // BEGIN (write your solution here)
+    function multiplyNumbersFromRange($start, $finish)
+    {
+        $i = $start;
+        $sum = 1;
+    
+        while ($i <= $finish) {
+            $sum = $sum * $i;
+            $i = $i + 1;
+        }
+    
+        return $sum;
+    };
+    // END
+
+    // 60.Агрегация данных (Строки)
+    namespace HexletBasics\Loops\AgregationString;
+    
+    // BEGIN (write your solution here)
+    function joinNumbersFromRange($start, $end)
+    {
+        $i = $start;
+        $result = '';
+    
+        while ($i <= $end) {
+            $result = "{$result}{$i}";
+            $i = $i + 1;
+        }
+        return $result;
+    };
+    // END
+
+    // 61.Обход строк
+    namespace HexletBasics\Loops\IterationOverString;
+    
+    // BEGIN (write your solution here)
+    function printReversedWordBySymbol($word) 
+    {
+        $i = strlen($word) - 1;
+        while ($i >= 0) {
+            print_r("$word[$i]\n");
+            $i = $i - 1;
+        }
+    };
+    // END
+
+    // 62.Условия внутри тела цикла
+    namespace HexletBasics\Loops\ConditionsInsideLoops;
+    
+    // BEGIN (write your solution here)
+    function countChars($str, $char)
+    {
+        $i = 0;
+        $count = 0;
+        while ($i < strlen($str)) {
+            if ($str[$i] === $char || strtoupper($str[$i]) === strtoupper($char)) {
+                $count = $count + 1;
+            }
+            $i = $i + 1;
+        }
+    
+        return $count;
+    };
+    // END
+
+    // 63.Формирование строк в циклах 
+    namespace HexletBasics\Loops\ReverseString;
+
+// BEGIN (write your solution here)
+function mysubstr($str, $char) 
+{
+    $i = 0;
+    $result = '';
+    while ($i < $char) {
+        $currentChar = $str[$i];
+        $result = "{$result}{$currentChar}";
+        $i = $i + 1;
+    }
+    return ($result);
+};
+// END
+
+// 64.Пограничные случаи
+namespace HexletBasics\Loops\EdgeCases;
+
+// BEGIN (write your solution here)
+function isArgumentsForSubstrCorrect ($str, $index, $char)
+{
+    $i = strlen($str);
+    if ($char < 0 || $index < 0 || $index >= $i || ($char + $index) > $i) {
+        return false;
+    }
+    return true;
+};
+// END
+
+// 65.Синтаксический сахар
+namespace HexletBasics\Loops\SyntaxSugar;
+
+// BEGIN (write your solution here)
+function filterString($str, $char)
+{
+    $i = 0;
+    $result = '';
+    while ($i < strlen($str)) {
+        $currentChar = $str[$i];
+
+        if ($currentChar !== $char) {
+            $result = "{$result}{$currentChar}";
+        }
+
+        $i += 1;
+    }
+
+    return $result;
+};
+// END
+
+// 66.Инкремент и декремент
+namespace HexletBasics\Loops\Mutators;
+
+// BEGIN (write your solution here)
+function makeItFunny($str, $n)
+{
+    $i = 0;
+    $result = '';
+    while ($i < strlen($str)) {
+        $currentChar = $str[$i];
+        if (($i + 1) % $n === 0) {
+            $upperChar = strtoupper($currentChar);
+            $result = "{$result}{$upperChar}";
+        } else {
+            $result = "{$result}{$currentChar}";
+        }
+        $i++;
+    }
+
+    return $result;
+};
+// END
+
+// 67.Возврат из циклов
+namespace HexletBasics\Loops\ReturnFromLoop;
+
+// BEGIN (write your solution here)
+function hasChar($str, $char)
+{
+    $length = strlen($str);
+    $i = 0;
+    while ($i < $length) {
+        $currentChar = $str[$i];
+        if ($currentChar === $char) {
+            return true;
+        }
+        $i++;
+    }
+
+    return false;
+};
+// END
+
+// 68.Цикл For
+namespace HexletBasics\Loops\ForLoop;
+
+// BEGIN (write your solution here)
+function sumOfSeries($start, $final)
+{
+    $result = 0;
+    for($i = $start; $i <= $final; $i++) {
+        $result += $i;
+    }
+
+    return $result;
+};
+// END
+
+// 69.Юникод
+namespace HexletBasics\DeepIntoStrings\Unicode;
+
+function invertCase($text)
+{
+    // BEGIN (write your solution here)
+    $len = mb_strlen($text);
+    $result = '';
+    for ($i = 0; $i < $len; $i++) {
+        $symbol = mb_substr($text, $i, 1);
+        $lowerSymbol = mb_strtolower($symbol);
+        if ($symbol === $lowerSymbol) {
+            $result .= mb_strtoupper($symbol);
+        } else {
+            $result .= $lowerSymbol;
+        }
+    }
+
+    return $result;
+    // END
+};
+
+// 70.Локализация
+// BEGIN (write your solution here)
+print_r(setlocale(LC_CTYPE, 0));
+// END
+
+// 71.Поиск стартовой позиции
+namespace HexletBasics\DeepIntoStrings\StartWith;
+
+function startsWith($text, $substr)
+{
+    // BEGIN (write your solution here)
+    $i = 0;
+    if ($text[$i] !== $substr[0]) {
+        return false;
+    }
+    return true;
+    // END
+};
+
+// 72.Время
+namespace HexletBasics\Dates\Timestamp;
+
+const SECONDS_IN_YEAR = 60 * 60 * 24 * 365;
+
+function getYear($timestamp)
+{
+    // BEGIN (write your solution here)
+    return (int)date('Y',$timestamp);
+    // END
+};
+
+// 73.Date
+namespace HexletBasics\Dates\DateFunction;
+
+function getCustomDate($timestamp)
+{
+    // BEGIN (write your solution here)
+    return date("d/m/Y", $timestamp);
+    // END
+};
+
+// 74.mktime() 
+namespace HexletBasics\Dates\Mkdtime;
+
+// BEGIN (write your solution here)
+function getHexletBirthday()
+{
+    return mktime(0, 0, 0, 1, 1, 2012);
+};
+// END
+
+// 75.Часовые пояса (тайм зоны)
+// BEGIN (write your solution here)
+print_r(date_default_timezone_get());
+// END
+
+?>
+
+</body>
+
+</html>
